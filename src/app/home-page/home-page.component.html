@@ -1,0 +1,59 @@
+<!-- <ds-themed-home-news></ds-themed-home-news> -->
+<!-- <div class="container">
+  <ng-container *ngIf="(site$ | async) as site">
+    <ds-view-tracker [object]="site"></ds-view-tracker>
+  </ng-container>
+  <ds-themed-search-form [inPlaceSearch]="false" [searchPlaceholder]="'home.search-form.placeholder' | translate"></ds-themed-search-form>
+  <ds-themed-top-level-community-list></ds-themed-top-level-community-list>
+  <ds-recent-item-list *ngIf="recentSubmissionspageSize>0"></ds-recent-item-list>
+</div> -->
+
+<div class="wrapper banner-header">
+  <div class="backdrop" style="width: 100%!important;">
+    <div class="container h-100">
+      <div class="row align-items-top justify-content-center h-100 mt-2">
+        <div class="col-12 col-md-10">
+          <ds-search-form modalDialogClass="search-form" centered="true" [showScopeSelector]="true"
+            [inPlaceSearch]="false" [searchPlaceholder]="'home.search-form.placeholder' | translate">
+          </ds-search-form>
+        </div>
+        <!-- <div class="col-12 d-flex justify-content-center  mt-0" >
+          <img src="assets/images/Aquadocsthree.png" class="mr-3" [ngClass]="(isXsOrSm$ | async) ? 'widthphone':''" />
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="row carousel-resource-cards">
+  <div class="col-lg-12 p-0 carousel-section">
+  </div>
+</div> -->
+<div class="mt-2 tab-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-lg-3 " [ngClass]="{'my_class': !visible}" *ngIf="(isXsOrSm$ | async) ">
+            <ds-configuration-search-page (closeSidebar)="closeSidebar()" (openSidebar)="closeSidebar()"
+              [sideBarWidth]="12" [showViewModes]="false" [searchEnabled]="false" [inPlaceSearch]="false"
+              [showScopeSelector]="false"></ds-configuration-search-page>
+          </div>
+          <div class="col-lg-9" *ngIf="visible">
+            <ng-container *ngIf="(site$ | async) as site">
+              <ds-view-tracker [object]="site"></ds-view-tracker>
+            </ng-container>
+
+            <ds-top-level-community-list top="true"></ds-top-level-community-list>
+            <div style="margin-bottom:20px; border-bottom: 5px solid #29a8e0 "></div>
+            <ds-recent-item-list *ngIf="recentSubmissionspageSize>0"></ds-recent-item-list>
+          </div>
+          <div class="col-lg-3" *ngIf="!(isXsOrSm$ | async)">
+
+            <ds-configuration-search-page [sideBarWidth]="12" [showViewModes]="false" [searchEnabled]="false"
+              [inPlaceSearch]="false" [showScopeSelector]="false"></ds-configuration-search-page>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
