@@ -52,6 +52,13 @@
       }
     }
   }
+  
+  .top-footer {
+    background-color: var(--ds-top-footer-bg);
+    padding: var(--ds-footer-padding);
+    margin: calc(var(--ds-footer-padding) * -1);
+    color: black;
+  }
 }
 
 

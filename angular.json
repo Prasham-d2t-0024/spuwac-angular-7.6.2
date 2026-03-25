@@ -61,7 +61,10 @@
                 "bundleName": "dspace-theme"
               }
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/JS/custom.js",
+              "src/assets/JS/jquery.min.js"
+            ],
             "baseHref": "/"
           },
           "configurations": {

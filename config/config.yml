@@ -1,5 +1,13 @@
 rest:
   ssl: true
-  host: demo.dspace.org
+  host: lab.d2t.co
   port: 443
-  nameSpace: /server
+  nameSpace: /serverspu
+
+# Search settings
+search: 
+  # Settings to enable/disable or configure advanced search filters.
+  advancedFilters:
+    enabled: true
+    # List of filters to enable in "Advanced Search" dropdown
+    filter: [ 'bastaNumber', 'goswaraNumber', 'firnumber', 'firyear', 'title', 'location', 'policeStationname', 'barcode', 'filename' ]

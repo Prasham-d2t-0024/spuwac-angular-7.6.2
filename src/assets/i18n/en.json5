@@ -32,7 +32,7 @@
 
   "error-page.description.404": "Page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with DSpace. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with J.J.Boards Repository. If the error persists, contact the administrator",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
@@ -150,7 +150,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, DSpace requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, J.J.Boards Repository requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -1516,7 +1516,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of DSpace",
+  "dso-selector.set-scope.community.button": "Search all of J.J.Boards Repository",
 
   "dso-selector.set-scope.community.or-divider": "or",
 
@@ -1668,9 +1668,9 @@
 
   "footer.copyright": "copyright © 2002-{{ year }}",
 
-  "footer.link.dspace": "DSpace software",
+  "footer.link.dspace": "J.J.Boards Repository",
 
-  "footer.link.lyrasis": "LYRASIS",
+  "footer.link.lyrasis": "DSquare Technologies",
 
   "footer.link.cookies": "Cookie settings",
 
@@ -1890,7 +1890,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in J.J.Boards Repository",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -1924,7 +1924,7 @@
 
   "info.feedback.title": "Feedback",
 
-  "info.feedback.info": "Thanks for sharing your feedback about the DSpace system. Your comments are appreciated!",
+  "info.feedback.info": "Thanks for sharing your feedback about the J.J.Boards Repository system. Your comments are appreciated!",
 
   "info.feedback.email_help": "This address will be used to follow up on your feedback.",
 
@@ -2838,7 +2838,7 @@
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
-  "login.form.header": "Please log in to DSpace",
+  "login.form.header": "Please log in to J.J.Boards Repository",
 
   "login.form.new-user": "New user? Click here to register.",
 
@@ -2856,7 +2856,7 @@
 
   "login.breadcrumbs": "Login",
 
-  "logout.form.header": "Log out from DSpace",
+  "logout.form.header": "Log out from J.J.Boards Repository",
 
   "logout.form.submit": "Log out",
 
@@ -2890,7 +2890,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "All of J.J.Boards Repository",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -3112,7 +3112,7 @@
 
   "nav.expandable-navbar-section-suffix": "(submenu)",
 
-  "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of J.J.Boards Repository",
 
   "nav.community-browse.header": "By Community",
 
@@ -3498,7 +3498,7 @@
 
   "register-page.registration.header": "New user registration",
 
-  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
+  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to J.J.Boards Repository.",
 
   "register-page.registration.email": "Email Address *",
 
@@ -3580,9 +3580,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title": "DSpace Repository",
+  "repository.title": "J.J.Boards Repository",
 
-  "repository.title.prefix": "DSpace Repository :: ",
+  "repository.title.prefix": "J.J.Boards Repository :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -3938,7 +3938,7 @@
 
   "search.form.search_dspace": "All repository",
 
-  "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "All of J.J.Boards Repository",
 
   "search.results.head": "Search Results",
 
@@ -4088,7 +4088,7 @@
 
   "submission.import-external.title.none": "Import metadata from an external source",
 
-  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to DSpace.",
+  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to J.J.Boards Repository.",
 
   "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
 
@@ -4856,7 +4856,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  "title": "J.J.Boards Repository",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5367,4 +5367,102 @@
   "process.overview.unknown.user": "Unknown",
 
   "browse.search-form.placeholder": "Search the repository",
+
+  "untypeitem.metadata.bastaNumber": "Basta Number",
+
+  "untypeitem.metadata.goswaraNumber": "Goswara Number",
+
+  "untypeitem.metadata.firNumber": "FIR Number",
+
+  "untypeitem.metadata.firYear": "FIR Year",
+
+  "untypeitem.metadata.fileNumber": "File Number",
+
+  "untypeitem.metadata.location": "Location",
+
+  "untypeitem.metadata.policeStationName": "Police Station Name",
+
+  "untypeitem.metadata.fileReceivedBy": "File Received By",
+
+  "untypeitem.metadata.fileReceivedDate": "File Received Date",
+
+  "untypeitem.metadata.fileName": "File Name",
+
+  "untypeitem.metadata.scanPageCount": "Scan Page Count",
+
+  "untypeitem.metadata.scannedBy": "Scanned By",
+
+  "untypeitem.metadata.scanDateTime": "Scan Date Time",
+
+  "untypeitem.metadata.barcode": "Barcode",
+
+  "footer.dsquere-tech": "DSquare Technologies",
+
+  "footer.rapid-dspace": "Rapid Dspace",
+
+  "footer.by": "by",
+
+  "footer.link.powered-by-dspace": "Powered by",
+
+  "search.filters.filter.bastaNumber.head": "Basta Number",
+  "search.filters.applied.f.bastaNumber": "Basta Number",
+
+  "search.filters.filter.firnumber.head": "FIR Number",
+  "search.filters.applied.f.firnumber": "FIR Number",
+
+  "search.filters.filter.firyear.head": "FIR Year",
+  "search.filters.applied.f.firyear": "FIR Year",
+
+  "search.filters.filter.location.head": "Location",
+  "search.filters.applied.f.location": "Location",
+
+  "search.filters.filter.policeStationname.head": "Police Station Name",
+  "search.filters.applied.f.policeStationname": "Police Station Name",
+
+  "search.filters.filter.fileName.head": "File Name",
+  "search.filters.applied.f.fileName": "File Name",
+
+  "search.filters.filter.scanPageCount.head": "Scan Page Count",
+  "search.filters.applied.f.scanPageCount": "Scan Page Count",
+
+  "search.filters.filter.scannedBy.head": "Scanned By",
+  "search.filters.applied.f.scannedBy": "Scanned By",
+
+  "search.filters.filter.scanDateTime.head": "Scan Date Time",
+  "search.filters.applied.f.scanDateTime": "Scan Date Time",
+
+  "search.filters.filter.barcode.head": "Barcode",
+  "search.filters.applied.f.barcode": "Barcode",
+
+  "search.filters.filter.title.text": "File Number",
+  "search.filters.filter.bastaNumber.text":"Basta Number",
+  "search.filters.filter.goswaraNumber.text":"Goswara Number",
+  "search.filters.filter.firnumber.text":"FIR Number",
+  "search.filters.filter.firyear.text":"FIR Year",
+  "search.filters.filter.location.text":"Location",
+  "search.filters.filter.policeStationname.text":"Police Station Name",
+  "search.filters.filter.filename.text":"File Name",
+  "search.filters.filter.scanPageCount.text":"Scan Page Count",
+  "search.filters.filter.scannedBy.text":"Scanned By",
+  "search.filters.filter.scanDateTime.text":"Scan Date Time",
+  "search.filters.filter.barcode.text":"Barcode",
+
+  "search.filters.filter.title.head": "Title",
+  "search.filters.applied.f.title": "Title",
+
+  "search.filters.operator.equals.text": "Equals",
+  "search.filters.operator.notequals.text": "Not Equals",
+  "search.filters.operator.contains.text": "Contains",
+  "search.filters.operator.notcontains.text": "Not Contains",
+  "search.filters.operator.startsWith.text": "Starts With",
+  "search.filters.operator.endsWith.text": "Ends With",
+  "search.filters.operator.between.text": "Between",
+  "search.filters.operator.notBetween.text": "Not Between",
+  "search.filters.operator.in.text": "In",
+  "search.filters.operator.notIn.text": "Not In",
+  "search.filters.operator.isEmpty.text": "Is Empty",
+  "search.filters.operator.isNotEmpty.text": "Is Not Empty",
+
+  "filter.search.text.placeholder":"Search",
+
 }

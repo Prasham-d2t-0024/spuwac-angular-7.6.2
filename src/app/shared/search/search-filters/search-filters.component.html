@@ -1,7 +1,29 @@
-<h3>{{"search.filters.head" | translate}}</h3>
+<!-- <h3>{{"search.filters.head" | translate}}</h3>
 <div *ngIf="(filters | async)?.hasSucceeded">
     <div *ngFor="let filter of (filters | async)?.payload; trackBy: trackUpdate">
         <ds-search-filter [scope]="currentScope" [filter]="filter" [inPlaceSearch]="inPlaceSearch" [refreshFilters]="refreshFilters"></ds-search-filter>
     </div>
 </div>
-<a class="btn btn-primary" [routerLink]="[searchLink]" [queryParams]="clearParams | async" queryParamsHandling="merge" role="button"><i class="fas fa-undo"></i> {{"search.filters.reset" | translate}}</a>
+<a class="btn btn-primary" [routerLink]="[searchLink]" [queryParams]="clearParams | async" queryParamsHandling="merge" role="button"><i class="fas fa-undo"></i> {{"search.filters.reset" | translate}}</a> -->
+<div class="row">
+    <div class="col-md-12 p-1">
+        <div class="tab-nav-band menu-with-filter">
+            <div class="tab-main-menu-band">
+                <button class="tablink current" onclick="WorkSPaceParentTab(event,'Action')">{{"search.filters.head" |
+                    translate}}</button>
+                <button class="tablink" onclick="WorkSPaceParentTab(event,'Bookmarks')">Advanced Search</button>
+            </div>
+        </div>
+        <div id="Action" class="text-band" style="display: block;">
+            <div *ngIf="(filters | async)?.hasSucceeded">
+                <div *ngFor="let filter of (filters | async)?.payload; trackBy: trackUpdate">
+                    <ds-search-filter [scope]="currentScope" [filter]="filter" [inPlaceSearch]="inPlaceSearch" [refreshFilters]="refreshFilters"></ds-search-filter>
+                </div>
+            </div>
+        </div>
+        <div id="Bookmarks" class="text-band">
+            <ds-advanced-search *ngIf="appConfig.search.advancedFilters.enabled"
+                [inPlaceSearch]="inPlaceSearch"></ds-advanced-search>
+        </div>
+    </div>
+</div>

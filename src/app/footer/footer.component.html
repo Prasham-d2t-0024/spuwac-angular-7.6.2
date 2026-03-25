@@ -59,8 +59,8 @@
         <a class="text-white"
            href="http://www.dspace.org/">{{ 'footer.link.dspace' | translate}}</a>
         {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
-        <a class="text-white"
-           href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' | translate}}</a>
+        <!-- <a class="text-white"
+           href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' | translate}}</a> -->
       </p>
       <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
         <li>
@@ -84,4 +84,24 @@
     </div>
   </div>
   <!-- Copyright -->
+   <div class="row p-2 top-footer align-items-center text-center text-md-left">
+      <!-- Left Section -->
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <a href="https://new.d2t.co/services/service-detail/rapid-dspace" style="font-size: 1rem;">
+          {{ 'footer.rapid-dspace' | translate }}
+        </a>
+        {{ 'footer.by' | translate }}
+        <a href="https://new.d2t.co/" style="font-size: 1rem;">
+          {{ 'footer.dsquere-tech' | translate }}
+        </a>
+      </div>
+
+      <!-- Right Section -->
+      <div class="col-12 col-md-6 text-md-right">
+        {{ 'footer.link.powered-by-dspace' | translate }}
+        <a href="https://dspace.org/">
+          DSpace
+        </a>
+      </div>
+    </div>
 </footer>

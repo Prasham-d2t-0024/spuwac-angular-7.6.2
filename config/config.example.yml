@@ -396,3 +396,11 @@ vocabularies:
 comcolSelectionSort:
   sortField: 'dc.title'
   sortDirection: 'ASC'
+
+# Search settings
+search: 
+  # Settings to enable/disable or configure advanced search filters.
+  advancedFilters:
+    enabled: true
+    # List of filters to enable in "Advanced Search" dropdown
+    filter: [ 'title', 'author', 'subject', 'entityType' ]

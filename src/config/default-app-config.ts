@@ -435,4 +435,21 @@ export class DefaultAppConfig implements AppConfig {
     sortField:'dc.title',
     sortDirection:'ASC',
   };
+
+  search: any = {
+    "advancedFilters": {
+      "enabled": true,
+      "filter": [
+        "bastaNumber",
+        "goswaraNumber",
+        "firnumber",
+        "firyear",
+        "title",
+        "location",
+        "policeStationname",
+        "barcode",
+        "filename"
+      ]
+    }
+  }
 }

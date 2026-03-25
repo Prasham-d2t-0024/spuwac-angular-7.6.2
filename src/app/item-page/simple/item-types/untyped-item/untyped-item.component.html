@@ -69,6 +69,105 @@
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
     </ds-item-page-uri-field>
+
+    <!-- <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.title')">
+      <span class="text-secondary h6">{{'untypeitem.metadata.fileNumber' | translate}} : </span>
+      <ng-container *ngFor="let val of object.allMetadataValues('dc.title'); let last = last;">
+        <span>{{val}}</span>
+        <span *ngIf="!last"> | </span>
+      </ng-container>
+    </div> -->
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.bastaNumber')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.bastaNumber' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.bastaNumber'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.goswaraNumber')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.goswaraNumber' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.goswaraNumber'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.fir.number')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.firNumber' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.fir.number'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.fir.year')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.firYear' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.fir.year'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.location')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.location' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.location'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.policeStation.name')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.policeStationName' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.policeStation.name'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.file.receivedBy')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.fileReceivedBy' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.file.receivedBy'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.file.receivedDate')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.fileReceivedDate' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.file.receivedDate'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.file.name')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.fileName' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.file.name'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.scan.pageCount')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.scanPageCount' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.scan.pageCount'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+    
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.barcode')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.barcode' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.barcode'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.scan.by')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.scannedBy' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.scan.by'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
+
+    <div class="col-lg-12 mb-3 p-0 item-list-abstract" *ngIf="object.firstMetadataValue('dc.scan.dateTime')">
+      <span class="custom-metadata-label">{{'untypeitem.metadata.scanDateTime' | translate}}</span>
+      <div><ng-container *ngFor="let val of object.allMetadataValues('dc.scan.dateTime'); let last = last;">
+        <span>{{val}}</span><span *ngIf="!last"> | </span>
+      </ng-container></div>
+    </div>
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button">

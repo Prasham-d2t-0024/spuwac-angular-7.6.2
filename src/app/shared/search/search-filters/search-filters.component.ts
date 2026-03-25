@@ -12,6 +12,7 @@ import { SearchFilterService } from '../../../core/shared/search/search-filter.s
 import { SEARCH_CONFIG_SERVICE } from '../../../my-dspace-page/my-dspace-page.component';
 import { currentPath } from '../../utils/route.utils';
 import { hasValue } from '../../empty.util';
+import { APP_CONFIG, AppConfig } from 'src/config/app-config.interface';
 
 @Component({
   selector: 'ds-search-filters',
@@ -59,7 +60,7 @@ export class SearchFiltersComponent implements OnInit, OnDestroy {
    * Link to the search page
    */
   searchLink: string;
-
+  filterLable = 'search';
   subs = [];
 
   /**
@@ -70,6 +71,7 @@ export class SearchFiltersComponent implements OnInit, OnDestroy {
    * @param {SearchConfigurationService} searchConfigService
    */
   constructor(
+    @Inject(APP_CONFIG) protected appConfig: AppConfig,
     private searchService: SearchService,
     private filterService: SearchFilterService,
     private router: Router,
@@ -77,6 +79,9 @@ export class SearchFiltersComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    if (!this.inPlaceSearch) {
+      this.filterLable = 'discover';
+    }
     this.clearParams = this.searchConfigService.getCurrentFrontendFilters().pipe(map((filters) => {
       Object.keys(filters).forEach((f) => filters[f] = null);
       return filters;
