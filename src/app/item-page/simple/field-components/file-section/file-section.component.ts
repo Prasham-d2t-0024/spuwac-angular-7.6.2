@@ -25,7 +25,7 @@ import { followLink } from 'src/app/shared/utils/follow-link-config.model';
 export class FileSectionComponent implements OnInit {
 
   @Input() item: Item;
-    @Input() isBlank: Boolean;
+    @Input() isBlank: Boolean=false;
 
   label = 'item.page.files';
 
