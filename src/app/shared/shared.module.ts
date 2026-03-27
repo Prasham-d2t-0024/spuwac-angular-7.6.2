@@ -284,6 +284,7 @@ import { BitstreamListItemComponent } from './object-list/bitstream-list-item/bi
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ThemedLangSwitchComponent } from './lang-switch/themed-lang-switch.component';
 import {ThemedUserMenuComponent} from './auth-nav-menu/user-menu/themed-user-menu.component';
+import { FileSectionComponent } from '../item-page/simple/field-components/file-section/file-section.component';
 import { DisplayBitstreamComponent } from './display-bitstream/display-bitstream.component';
 import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 const MODULES = [
@@ -406,6 +407,7 @@ DisplayBitstreamComponent,
   EpersonSearchBoxComponent,
   GroupSearchBoxComponent,
   ThemedItemPageTitleFieldComponent,
+  FileSectionComponent
 ];
 
 const ENTRY_COMPONENTS = [
