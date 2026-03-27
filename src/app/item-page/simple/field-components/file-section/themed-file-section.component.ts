@@ -10,8 +10,9 @@ import {Item} from '../../../../core/shared/item.model';
 export class ThemedFileSectionComponent extends ThemedComponent<FileSectionComponent> {
 
     @Input() item: Item;
+     @Input() isBlank: boolean = false;
 
-    protected inAndOutputNames: (keyof FileSectionComponent & keyof this)[] = ['item'];
+    protected inAndOutputNames: (keyof FileSectionComponent & keyof this)[] = ['item', 'isBlank'];
 
     protected getComponentName(): string {
         return 'FileSectionComponent';
