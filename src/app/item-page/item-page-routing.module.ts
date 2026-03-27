@@ -65,8 +65,8 @@ import { DSOEditMenuResolver } from '../shared/dso-page/dso-edit-menu.resolver';
           menu: {
             public: [{
               id: 'statistics_item_:id',
-              active: true,
-              visible: true,
+              active: false,
+              visible: false,
               index: 2,
               model: {
                 type: MenuItemType.LINK,

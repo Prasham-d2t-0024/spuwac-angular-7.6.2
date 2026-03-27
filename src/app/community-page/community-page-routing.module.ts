@@ -74,8 +74,8 @@ import { I18nBreadcrumbResolver } from '../core/breadcrumbs/i18n-breadcrumb.reso
           menu: {
             public: [{
               id: 'statistics_community_:id',
-              active: true,
-              visible: true,
+              active: false,
+              visible: false,
               index: 2,
               model: {
                 type: MenuItemType.LINK,
