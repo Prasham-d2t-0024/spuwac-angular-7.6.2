@@ -12,7 +12,7 @@ import { Bitstream } from '../../shared/bitstream.model';
 import { RemoteData } from '../remote-data';
 import { BitstreamDataService } from '../bitstream-data.service';
 import { IdentifiableDataService } from '../base/identifiable-data.service';
-import { FollowLinkConfig } from '../../../shared/utils/follow-link-config.model';
+import { followLink, FollowLinkConfig } from '../../../shared/utils/follow-link-config.model';
 import { FindAllData, FindAllDataImpl } from '../base/find-all-data';
 import { FindListOptions } from '../find-list-options.model';
 import { dataService } from '../base/data-service.decorator';
@@ -56,7 +56,7 @@ export class ProcessDataService extends IdentifiableDataService<Process> impleme
    */
   getFiles(processId: string): Observable<RemoteData<PaginatedList<Bitstream>>> {
     const href$ = this.getFilesEndpoint(processId);
-    return this.bitstreamDataService.findListByHref(href$);
+    return this.bitstreamDataService.findListByHref(href$, {}, true, true, followLink('format'));
   }
 
   /**
