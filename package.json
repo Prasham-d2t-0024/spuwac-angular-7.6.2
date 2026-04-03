@@ -118,6 +118,7 @@
     "ng-mocks": "^14.10.0",
     "ng2-file-upload": "1.4.0",
     "ng2-nouislider": "^2.0.0",
+    "ng2-pdfjs-viewer": "^6.0.2",
     "ngx-infinite-scroll": "^15.0.0",
     "ngx-pagination": "6.0.3",
     "ngx-sortablejs": "^11.1.0",
@@ -132,8 +133,7 @@
     "sortablejs": "1.15.0",
     "uuid": "^8.3.2",
     "webfontloader": "1.6.28",
-    "zone.js": "~0.11.5",
-    "ng2-pdfjs-viewer": "^6.0.2"
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "~15.0.0",
