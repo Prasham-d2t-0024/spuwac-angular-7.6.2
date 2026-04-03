@@ -318,6 +318,10 @@
 
   "admin.access-control.epeople.form.emailHint": "Must be a valid email address",
 
+  "admin.access-control.epeople.form.password": "Password",
+
+  "admin.access-control.epeople.form.passwordHint": "Must be at least 8 characters",
+
   "admin.access-control.epeople.form.canLogIn": "Can log in",
 
   "admin.access-control.epeople.form.requireCertificate": "Requires certificate",
@@ -1643,6 +1647,8 @@
   "error.validation.NotValidEmail": "This is not a valid email",
 
   "error.validation.emailTaken": "This email is already taken",
+
+  "error.validation.passwordMinLength": "Password must be at least 8 characters",
 
   "error.validation.groupExists": "This group already exists",
 
@@ -5464,5 +5470,6 @@
   "search.filters.operator.isNotEmpty.text": "Is Not Empty",
 
   "filter.search.text.placeholder":"Search",
+  "admin.access-control.epeople.form.password":"Password",
 
 }

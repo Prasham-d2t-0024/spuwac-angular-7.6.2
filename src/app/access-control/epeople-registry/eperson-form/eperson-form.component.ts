@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
-import { UntypedFormGroup } from '@angular/forms';
+import { UntypedFormGroup, Validators } from '@angular/forms';
 import {
   DynamicCheckboxModel,
   DynamicFormControlModel,
@@ -68,6 +68,7 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
   firstName: DynamicInputModel;
   lastName: DynamicInputModel;
   email: DynamicInputModel;
+  password: DynamicInputModel;
   // booleans
   canLogIn: DynamicCheckboxModel;
   requireCertificate: DynamicCheckboxModel;
@@ -92,6 +93,11 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
       }
     },
     email: {
+      grid: {
+        host: 'row'
+      }
+    },
+    password: {
       grid: {
         host: 'row'
       }
@@ -224,10 +230,12 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
       this.translateService.get(`${this.messagePrefix}.firstName`),
       this.translateService.get(`${this.messagePrefix}.lastName`),
       this.translateService.get(`${this.messagePrefix}.email`),
+      this.translateService.get(`${this.messagePrefix}.password`),
       this.translateService.get(`${this.messagePrefix}.canLogIn`),
       this.translateService.get(`${this.messagePrefix}.requireCertificate`),
       this.translateService.get(`${this.messagePrefix}.emailHint`),
-    ]).subscribe(([firstName, lastName, email, canLogIn, requireCertificate, emailHint]) => {
+      this.translateService.get(`${this.messagePrefix}.passwordHint`),
+    ]).subscribe(([firstName, lastName, email, password, canLogIn, requireCertificate, emailHint, passwordHint]) => {
       this.firstName = new DynamicInputModel({
         id: 'firstName',
         label: firstName,
@@ -261,6 +269,22 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
         },
         hint: emailHint
       });
+      this.password = new DynamicInputModel({
+        id: 'password',
+        label: password,
+        name: 'password',
+        inputType: 'password',
+        validators: {
+          required: null,
+          pattern: '.{8,}',
+        },
+        errorMessages: {
+          required: 'error.validation.required',
+          pattern: 'error.validation.passwordMinLength'
+        },
+        required: true,
+        hint: passwordHint
+      });
       this.canLogIn = new DynamicCheckboxModel(
         {
           id: 'canLogIn',
@@ -279,6 +303,7 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
         this.firstName,
         this.lastName,
         this.email,
+        this.password,
         this.canLogIn,
         this.requireCertificate,
       ];
@@ -294,6 +319,7 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
           firstName: eperson != null ? eperson.firstMetadataValue('eperson.firstname') : '',
           lastName: eperson != null ? eperson.firstMetadataValue('eperson.lastname') : '',
           email: eperson != null ? eperson.email : '',
+          password: '',
           canLogIn: eperson != null ? eperson.canLogIn : true,
           requireCertificate: eperson != null ? eperson.requireCertificate : false
         });
@@ -371,6 +397,7 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
             ],
           },
           email: this.email.value,
+          password: this.password.value,
           canLogIn: this.canLogIn.value,
           requireCertificate: this.requireCertificate.value,
         };
@@ -428,6 +455,7 @@ export class EPersonFormComponent implements OnInit, OnDestroy {
         ],
       },
       email: (hasValue(values.email) ? values.email : ePerson.email),
+      password: values.password,
       canLogIn: (hasValue(values.canLogIn) ? values.canLogIn : ePerson.canLogIn),
       requireCertificate: (hasValue(values.requireCertificate) ? values.requireCertificate : ePerson.requireCertificate),
       _links: ePerson._links,
