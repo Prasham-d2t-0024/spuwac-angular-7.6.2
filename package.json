@@ -132,7 +132,8 @@
     "sortablejs": "1.15.0",
     "uuid": "^8.3.2",
     "webfontloader": "1.6.28",
-    "zone.js": "~0.11.5"
+    "zone.js": "~0.11.5",
+    "ng2-pdfjs-viewer": "^6.0.2"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "~15.0.0",
@@ -183,7 +184,7 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "karma-mocha-reporter": "2.2.5",
-    "ngx-mask": "^13.1.7",
+    "ngx-mask": "11.1.5",
     "nodemon": "^2.0.22",
     "postcss": "^8.4",
     "postcss-apply": "0.12.0",

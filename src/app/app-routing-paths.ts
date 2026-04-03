@@ -18,7 +18,9 @@ export const LEGACY_BITSTREAM_MODULE_PATH = 'bitstream';
 export function getBitstreamModuleRoute() {
   return `/${BITSTREAM_MODULE_PATH}`;
 }
-
+export function getBitstreamViewerRoute(bitstream): string {
+  return new URLCombiner(getBitstreamModuleRoute(), bitstream.uuid, 'viewer').toString();
+}
 export function getBitstreamDownloadRoute(bitstream): string {
   return new URLCombiner(getBitstreamModuleRoute(), bitstream.uuid, 'download').toString();
 }

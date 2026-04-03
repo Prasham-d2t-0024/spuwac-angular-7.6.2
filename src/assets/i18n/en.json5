@@ -804,7 +804,7 @@
 
   "browse.comcol.by.nsi": "By Norwegian Science Index",
 
-  "browse.comcol.by.title": "By Title",
+  "browse.comcol.by.title": "By File Number",
 
   "browse.comcol.head": "Browse",
 
@@ -828,7 +828,8 @@
 
   "browse.metadata.nsi.breadcrumbs": "Browse by Norwegian Science Index",
 
-  "browse.metadata.title.breadcrumbs": "Browse by Title",
+  "browse.metadata.title.breadcrumbs": "Browse by File Number",
+
 
   "pagination.next.button": "Next",
 
@@ -2894,7 +2895,7 @@
 
   "menu.section.browse_community_by_issue_date": "By Issue Date",
 
-  "menu.section.browse_community_by_title": "By Title",
+  "menu.section.browse_community_by_title": "By File Number",
 
   "menu.section.browse_global": "All of J.J.Boards Repository",
 
@@ -2908,7 +2909,7 @@
 
   "menu.section.browse_global_by_nsi": "By Norwegian Science Index",
 
-  "menu.section.browse_global_by_title": "By Title",
+  "menu.section.browse_global_by_title": "By File Number",
 
   "menu.section.browse_global_communities_and_collections": "Communities & Collections",
 
@@ -5471,5 +5472,24 @@
 
   "filter.search.text.placeholder":"Search",
   "admin.access-control.epeople.form.password":"Password",
+
+  "menu.section.browse_global_by_firyear": "By FIR Year",
+  "browse.metadata.firyear": "FIR Year",
+  "browse.metadata.firyear.breadcrumbs": "Browse by FIR Year",
+  "browse.comcol.by.firyear" : "By FIR Year",
+"menu.section.browse_community_by_firyear": "By FIR Year",
+
+  "menu.section.browse_global_by_location": "By Location",
+  "browse.metadata.location": "Location",
+  "browse.metadata.location.breadcrumbs": "Browse by Location",
+  "browse.comcol.by.location" : "By Location",
+  "menu.section.browse_community_by_location": "By Location",
+  
+  "menu.section.browse_global_by_policeStation": "By Police Station",
+  "browse.metadata.policeStation": "Police Station",
+  "browse.metadata.policeStation.breadcrumbs": "Browse by Police Station",
+  "browse.comcol.by.policeStation" : "By Police Station",
+  "menu.section.browse_community_by_policeStation": "By Police Station",
+
 
 }

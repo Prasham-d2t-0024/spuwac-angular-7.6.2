@@ -52,7 +52,7 @@ import { ThemedPageErrorComponent } from './page-error/themed-page-error.compone
         canActivateChild: [ServerCheckGuard],
         resolve: [MenuResolver],
         children: [
-          { path: '', redirectTo: '/login', pathMatch: 'full' },
+          { path: '', redirectTo: '/home', pathMatch: 'full' },
           {
             path: 'reload/:rnd',
             component: ThemedPageNotFoundComponent,

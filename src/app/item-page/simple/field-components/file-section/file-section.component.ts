@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { getFirstCompletedRemoteData } from '../../../../core/shared/operators';
 import { AppConfig, APP_CONFIG } from 'src/config/app-config.interface';
 import { DSONameService } from '../../../../core/breadcrumbs/dso-name.service';
+import { followLink } from 'src/app/shared/utils/follow-link-config.model';
 
 /**
  * This component renders the file section of the item
@@ -24,6 +25,7 @@ import { DSONameService } from '../../../../core/breadcrumbs/dso-name.service';
 export class FileSectionComponent implements OnInit {
 
   @Input() item: Item;
+    @Input() isBlank: Boolean=false;
 
   label = 'item.page.files';
 
@@ -70,7 +72,7 @@ export class FileSectionComponent implements OnInit {
     this.bitstreamDataService.findAllByItemAndBundleName(this.item, 'ORIGINAL', {
       currentPage: this.currentPage,
       elementsPerPage: this.pageSize
-    }).pipe(
+    }, true, true, followLink('format')).pipe(
       getFirstCompletedRemoteData(),
     ).subscribe((bitstreamsRD: RemoteData<PaginatedList<Bitstream>>) => {
       if (bitstreamsRD.errorMessage) {

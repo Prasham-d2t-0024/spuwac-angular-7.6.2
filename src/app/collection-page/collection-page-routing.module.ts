@@ -91,8 +91,8 @@ import { CommunityBreadcrumbResolver } from '../core/breadcrumbs/community-bread
           menu: {
             public: [{
               id: 'statistics_collection_:id',
-              active: true,
-              visible: true,
+              active: false,
+              visible: false,
               index: 2,
               model: {
                 type: MenuItemType.LINK,
