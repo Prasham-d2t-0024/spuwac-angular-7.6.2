@@ -12920,11 +12920,6 @@ function _finishRendering2() {
   const endOfContent = document.createElement("div");
   endOfContent.className = "endOfContent";
   this.div.append(endOfContent);
-  const watermark = document.createElement("div");
-  watermark.className = "watermark";
-  watermark.innerHTML = "BIHAR STATE ARCHIVES DIRECTORATE"
-  watermark.id = "watermark"
-  this.div.append(watermark);
   _classPrivateMethodGet(this, _bindMouse, _bindMouse2).call(this);
 }
 function _bindMouse2() {
