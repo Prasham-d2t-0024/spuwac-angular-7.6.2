@@ -23,33 +23,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <html dir="ltr" >
 
 <head>
-  <style>
-    /* Watermark style */
-    .watermark {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      font-size: calc(var(--scale-factor) * 2rem);;
-      color: grey;
-      /* Increase the opacity of the watermark color */
-      white-space: nowrap;
-      pointer-events: none;
-      /* Make sure watermark doesn't interfere with page interactions */
-      z-index: 1000;
-      /* Ensure the watermark is on top */
-      user-select: none;
-      /* Prevent text selection */
-      opacity: 1;
-      /* Increase opacity to make it more visible */
-      transform: rotate(-45deg);
-      left: 0;
-    right: 0;
-    margin-inline: auto;
-    width: fit-content;
-    top: 50%;
-      /* Rotate watermark */
-    }
-  
-  
+  <style>  
     /* Style for the page content */
     .content {
       position: relative;
